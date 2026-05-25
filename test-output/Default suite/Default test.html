@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/8/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 25 14:41:31 IST 2026</td>
+<td>Started on:</td><td>Mon May 25 15:20:17 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>254 seconds (254608 ms)</td>
+<tr><td>Total time:</td><td>1056 seconds (1056431 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,28 +76,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Admin page access after login", "Admin Module Functionality"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57852}, goog:processID: 15932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57852/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3fc0b38353497ce7991366a048a994f0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at utilities.WaitUtils.waitForElement(WaitUtils.java:24)
+	at pages.LoginPage.EnteruserName(LoginPage.java:29)
+	at stepDefinitions.AdminSteps.user_is_logged_into_the_application(AdminSteps.java:29)
+	at ✽.User is logged into the application(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/Admin.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1596708569", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596708569'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57852}, goog:processID: 15932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57852/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3fc0b38353497ce7991366a048a994f0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at utilities.WaitUtils.waitForElement(WaitUtils.java:24)
+	at pages.LoginPage.EnteruserName(LoginPage.java:29)
+	at stepDefinitions.AdminSteps.user_is_logged_into_the_application(AdminSteps.java:29)
+	at ✽.User is logged into the application(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/Admin.feature:6)
+</pre></div></td>
+<td>151</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
 <td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search user by username", "Admin Module Functionality"</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}.
 (tried for 20 seconds with 500 milliseconds interval)
 Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63327}, goog:processID: 6048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63327/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 808cff537748a6680f1df391e0e453c2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65011}, goog:processID: 16096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65011/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5f71d30de7b23344203bd4040711763
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
 	at utilities.WaitUtils.waitForElement(WaitUtils.java:24)
 	at pages.LoginPage.EnteruserName(LoginPage.java:29)
 	at stepDefinitions.AdminSteps.user_is_on_admin_page(AdminSteps.java:47)
 	at ✽.User is on Admin page(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/Admin.feature:11)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1447521302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1447521302'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}.
+</pre></div><a href='#' onClick='toggleBox("stack-trace805561728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace805561728'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}.
 (tried for 20 seconds with 500 milliseconds interval)
 Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63327}, goog:processID: 6048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63327/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 808cff537748a6680f1df391e0e453c2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65011}, goog:processID: 16096, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65011/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5f71d30de7b23344203bd4040711763
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
 	at utilities.WaitUtils.waitForElement(WaitUtils.java:24)
@@ -105,7 +137,39 @@ Session ID: 808cff537748a6680f1df391e0e453c2
 	at stepDefinitions.AdminSteps.user_is_on_admin_page(AdminSteps.java:47)
 	at ✽.User is on Admin page(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/Admin.feature:11)
 </pre></div></td>
-<td>25</td>
+<td>124</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a new user with valid details", "Admin Module Functionality"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62365}, goog:processID: 20256, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62365/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6892e9625a3644bf0d4177d315b9ecd2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at utilities.WaitUtils.waitForElement(WaitUtils.java:24)
+	at pages.LoginPage.EnteruserName(LoginPage.java:29)
+	at stepDefinitions.AdminSteps.user_is_on_admin_page(AdminSteps.java:47)
+	at ✽.User is on Admin page(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/Admin.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace311487784", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace311487784'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62365}, goog:processID: 20256, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62365/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6892e9625a3644bf0d4177d315b9ecd2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at utilities.WaitUtils.waitForElement(WaitUtils.java:24)
+	at pages.LoginPage.EnteruserName(LoginPage.java:29)
+	at stepDefinitions.AdminSteps.user_is_on_admin_page(AdminSteps.java:47)
+	at ✽.User is on Admin page(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/Admin.feature:17)
+</pre></div></td>
+<td>30</td>
 <td>runners.Runner@7c9d8e2</td></tr>
 <tr>
 <td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete an existing user", "Admin Module Functionality"</td>
@@ -114,22 +178,22 @@ Session ID: 808cff537748a6680f1df391e0e453c2
 Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54959}, goog:processID: 14696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54959/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cbdcdbbbe8eff6465a9ad4ae4ea3584f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53981}, goog:processID: 20708, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53981/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9dfe3228d6fbd1f600ad69f3a031c7f7
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
 	at utilities.WaitUtils.waitForElement(WaitUtils.java:24)
 	at pages.LoginPage.EnteruserName(LoginPage.java:29)
 	at stepDefinitions.AdminSteps.user_is_on_admin_page1(AdminSteps.java:206)
 	at ✽.user is on Admin page(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/Admin.feature:31)
-</pre></div><a href='#' onClick='toggleBox("stack-trace925829785", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace925829785'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}.
+</pre></div><a href='#' onClick='toggleBox("stack-trace2026005178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2026005178'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}.
 (tried for 20 seconds with 500 milliseconds interval)
 Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54959}, goog:processID: 14696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54959/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cbdcdbbbe8eff6465a9ad4ae4ea3584f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53981}, goog:processID: 20708, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53981/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9dfe3228d6fbd1f600ad69f3a031c7f7
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
 	at utilities.WaitUtils.waitForElement(WaitUtils.java:24)
@@ -137,7 +201,163 @@ Session ID: cbdcdbbbe8eff6465a9ad4ae4ea3584f
 	at stepDefinitions.AdminSteps.user_is_on_admin_page1(AdminSteps.java:206)
 	at ✽.user is on Admin page(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/Admin.feature:31)
 </pre></div></td>
+<td>62</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify My Info page access", "My Info Functionality"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is logged into application&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given(&quot;User is logged into application&quot;)
+public void user_is_logged_into_application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is logged into application(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/MyInfo.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1720994940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1720994940'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is logged into application&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given(&quot;User is logged into application&quot;)
+public void user_is_logged_into_application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is logged into application(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/MyInfo.feature:5)
+</pre></div></td>
+<td>12</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit employee details", "Employee Management Functionality"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b268fc87a99bf83d61d752e8b0eb5ff4, clickElement {id=f.5A6136A8DF3F38C0C7D862952FBC4241.d.F6722614AAFECA841ACCFE2CEEB5C6B7.e.68}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62063}, goog:processID: 19972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62063/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b268fc87a99bf83d61d752e8b0eb5ff4)] -&gt; xpath: (//button[contains(@class,&apos;oxd-table-cell-action-space&apos;)])[1]]
+Session ID: b268fc87a99bf83d61d752e8b0eb5ff4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at pages.PIMModulePage.clickEdit(PIMModulePage.java:68)
+	at stepDefinitions.PIMSteps.user_clicks_edit_employee_button(PIMSteps.java:127)
+	at ✽.User clicks Edit employee button(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/PIM.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace839289583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace839289583'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b268fc87a99bf83d61d752e8b0eb5ff4, clickElement {id=f.5A6136A8DF3F38C0C7D862952FBC4241.d.F6722614AAFECA841ACCFE2CEEB5C6B7.e.68}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62063}, goog:processID: 19972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62063/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b268fc87a99bf83d61d752e8b0eb5ff4)] -&gt; xpath: (//button[contains(@class,&apos;oxd-table-cell-action-space&apos;)])[1]]
+Session ID: b268fc87a99bf83d61d752e8b0eb5ff4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at pages.PIMModulePage.clickEdit(PIMModulePage.java:68)
+	at stepDefinitions.PIMSteps.user_clicks_edit_employee_button(PIMSteps.java:127)
+	at ✽.User clicks Edit employee button(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/PIM.feature:19)
+</pre></div></td>
+<td>24</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Upload employee profile picture", "Employee Management Functionality"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-v-10d463b7=&quot;&quot; data-v-304890b0=&quot;&quot; type=&quot;submit&quot; class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;&gt;...&lt;/button&gt; is not clickable at point (1402, 491). Other element would receive the click: &lt;div data-v-d5bfe35b=&quot;&quot; class=&quot;oxd-form-loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=148.0.7778.179)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5df7374dfeecb8e75a31eb507f71a26, clickElement {id=f.8BE6E2526606761F34429FF691C40E15.d.7E56B00A6F303A4841C50E7590F2E386.e.246}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62693}, goog:processID: 16688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62693/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5df7374dfeecb8e75a31eb507f71a26)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: d5df7374dfeecb8e75a31eb507f71a26
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at pages.PIMModulePage.clickSave(PIMModulePage.java:52)
+	at stepDefinitions.PIMSteps.user_clicks_save_button(PIMSteps.java:60)
+	at ✽.User clicks Save button(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/PIM.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1311908104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1311908104'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-v-10d463b7=&quot;&quot; data-v-304890b0=&quot;&quot; type=&quot;submit&quot; class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;&gt;...&lt;/button&gt; is not clickable at point (1402, 491). Other element would receive the click: &lt;div data-v-d5bfe35b=&quot;&quot; class=&quot;oxd-form-loader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=148.0.7778.179)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5df7374dfeecb8e75a31eb507f71a26, clickElement {id=f.8BE6E2526606761F34429FF691C40E15.d.7E56B00A6F303A4841C50E7590F2E386.e.246}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62693}, goog:processID: 16688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62693/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5df7374dfeecb8e75a31eb507f71a26)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
+Session ID: d5df7374dfeecb8e75a31eb507f71a26
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at pages.PIMModulePage.clickSave(PIMModulePage.java:52)
+	at stepDefinitions.PIMSteps.user_clicks_save_button(PIMSteps.java:60)
+	at ✽.User clicks Save button(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/PIM.feature:27)
+</pre></div></td>
 <td>39</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit existing user details", "Admin Module Functionality"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63161}, goog:processID: 19940, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63161/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71f2262927e8a24a34a46cfbf5652f11
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at utilities.WaitUtils.waitForElement(WaitUtils.java:24)
+	at pages.LoginPage.EnteruserName(LoginPage.java:29)
+	at stepDefinitions.AdminSteps.user_is_on_admin_page(AdminSteps.java:47)
+	at ✽.User is on Admin page(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/Admin.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1389624061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1389624061'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.name: username, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}.
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\MYPC~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63161}, goog:processID: 19940, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63161/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71f2262927e8a24a34a46cfbf5652f11
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at utilities.WaitUtils.waitForElement(WaitUtils.java:24)
+	at pages.LoginPage.EnteruserName(LoginPage.java:29)
+	at stepDefinitions.AdminSteps.user_is_on_admin_page(AdminSteps.java:47)
+	at ✽.User is on Admin page(file:///D:/java21/OrangaeHRMAutomationCapstoneProject/src/test/resources/feature/Admin.feature:24)
+</pre></div></td>
+<td>71</td>
 <td>runners.Runner@7c9d8e2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -149,19 +369,84 @@ Session ID: cbdcdbbbe8eff6465a9ad4ae4ea3584f
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a new user with valid details", "Admin Module Functionality"</td>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Save and verify updated information", "My Info Functionality"</td>
 <td></td>
-<td>33</td>
+<td>29</td>
 <td>runners.Runner@7c9d8e2</td></tr>
 <tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit existing user details", "Admin Module Functionality"</td>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search employee by ID", "Employee Management Functionality"</td>
 <td></td>
-<td>39</td>
+<td>21</td>
 <td>runners.Runner@7c9d8e2</td></tr>
 <tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Admin page access after login", "Admin Module Functionality"</td>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify all UI elements on Login page", "Login User Functionality"</td>
 <td></td>
-<td>115</td>
+<td>37</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message for invalid login", "Login User Functionality"</td>
+<td></td>
+<td>38</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update contact details", "My Info Functionality"</td>
+<td></td>
+<td>23</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify forgot password link navigation", "Login User Functionality"</td>
+<td></td>
+<td>37</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reset password with invalid username", "Login User Functionality"</td>
+<td></td>
+<td>62</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login With Invalid UserName", "Login User Functionality"</td>
+<td></td>
+<td>30</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login With Invalid Password", "Login User Functionality"</td>
+<td></td>
+<td>29</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful user login", "Login User Functionality"</td>
+<td></td>
+<td>57</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a new employee", "Employee Management Functionality"</td>
+<td></td>
+<td>23</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify session termination after logout", "Logout Functionality"</td>
+<td></td>
+<td>20</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete employee record", "Employee Management Functionality"</td>
+<td></td>
+<td>26</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with blank credentials", "Login User Functionality"</td>
+<td></td>
+<td>17</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify logout functionality", "Logout Functionality"</td>
+<td></td>
+<td>53</td>
+<td>runners.Runner@7c9d8e2</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Update personal details", "My Info Functionality"</td>
+<td></td>
+<td>32</td>
 <td>runners.Runner@7c9d8e2</td></tr>
 </table><p>
 </body>

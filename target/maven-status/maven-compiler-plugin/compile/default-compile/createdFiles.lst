@@ -1,0 +1,7 @@
+utilities\WaitUtils.class
+base\BaseClass.class
+pages\LoginPage.class
+pages\PIMModulePage.class
+pages\LogoutPage.class
+pages\AdminPage.class
+pages\MyInfoPage.class

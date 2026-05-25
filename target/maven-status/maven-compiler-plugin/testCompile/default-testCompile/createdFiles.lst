@@ -1,0 +1,7 @@
+stepDefinitions\MyInfoStep.class
+stepDefinitions\LoginStep.class
+runners\Runner.class
+stepDefinitions\PIMSteps.class
+hooks\Hooks.class
+stepDefinitions\AdminSteps.class
+stepDefinitions\LogoutStep.class
