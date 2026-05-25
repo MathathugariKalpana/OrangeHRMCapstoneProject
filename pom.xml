@@ -40,10 +40,6 @@
     <version>7.34.3</version>
     <scope>compile</scope>
 </dependency>
-  	<dependency>
-  		<groupId>Flipkartlogin</groupId>
-  		<artifactId>FlipkartAutomation</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+  
   </dependencies>
 </project>
