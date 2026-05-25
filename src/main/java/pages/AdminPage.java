@@ -52,7 +52,7 @@ public class AdminPage {
             By.xpath("//i[@class='oxd-icon bi-pencil-fill']");
 
     By deleteBtn =
-            By.xpath("//button[contains(@class,'oxd-icon-button')])[14]");
+            By.xpath("//button[contains(@class,'oxd-icon-button')])[15]");
 
     By confirmDeleteBtn =
             By.xpath("//button[normalize-space()='Yes, Delete']");
@@ -127,9 +127,9 @@ public void selectUserRole(String role) {
     }
 
     public void clickDelete() throws InterruptedException {
-    	 
+    	 Thread.sleep(3000);
         wait.waitForClickable(deleteBtn).click();
-        Thread.sleep(600);
+//        Thread.sleep(600);
     }
 
     public void confirmDelete() {
